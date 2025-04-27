@@ -1,0 +1,168 @@
+/* Global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+    color: #ffffff;
+    transition: background-color 1s, color 1s;
+  }
+  
+  /* Header */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: #0b0c28;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  
+  .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #ffffff;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    position: relative;
+    padding-bottom: 5px;
+  }
+  
+  nav ul li a::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #5dc1b9;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+  }
+  
+  nav ul li a:hover::after,
+  nav ul li a.active::after {
+    width: 100%;
+  }
+  
+  /* Sections */
+  section {
+    min-height: 100vh;
+    padding: 100px 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .home {
+    flex-direction: row;
+    gap: 50px;
+    text-align: left;
+  }
+  
+  .home img {
+    width: 300px;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgb(2, 0, 76);
+  }
+  
+  /* Highlight */
+  .highlight {
+    color: #b77aef;
+  }
+  
+  /* Social Icons */
+  .social-icons {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+    font-size: 2rem;
+  }
+  
+  .social-icons a {
+    color: white;
+    transition: transform 0.3s, color 0.3s;
+  }
+  
+  .social-icons a:hover {
+    color: #5dc1b9;
+    transform: scale(1.2);
+  }
+  
+  /* Headings */
+  h2 {
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+    color: #5dc1b9;
+  }
+  
+  /* Cards */
+  .edu-cards, .skill-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  
+  .card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 20px;
+    width: 270px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s, background 0.5s;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+    background: rgba(255, 255, 255, 0.15);
+  }
+  
+  .card h3 {
+    margin-bottom: 15px;
+    color: #a086f7;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 20px;
+    background: #0b0c28;
+    font-size: 1rem;
+    color: #ccc;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    header {
+      flex-direction: column;
+    }
+  
+    .home {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .home img {
+      width: 80%;
+    }
+  }
+  
