@@ -1,6 +1,6 @@
 // Typed.js
 var typed = new Typed('#typed-text', {
-    strings: ['Cyber Security Enthusiast', 'Frontend Developer', 'UI/UX Designer', 'Machine Learning Learner'],
+    strings: ['Cyber Security Enthusiast', 'Frontend Developer', 'UI/UX Designer', 'AI-ML Learner'],
     typeSpeed: 50,
     backSpeed: 50,
     loop: true
